@@ -36,7 +36,7 @@ li {
 
 header {
     background-color: rgb(231, 217, 242);
-    height: calc(100vh - 30px);
+    height: calc(100vh -30px);
     padding: 24px;
     display: flex;
     align-items: center;
