@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Marhey', sans-serif;
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: rgb(180, 241, 241);
+}
+
+.logo {
+    width: 300px;
+}
+
+a {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 26px;
+}
+
+header {
+    background-color: rgb(231, 217, 242);
+    height: calc(100vh - 30px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 52px;
+}
+
+.subhead {
+    font-size: 36px;
+    margin: 16px 0 24px 0;
+}
+.row{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+/* about */
+#about,#discord,#contact,footer  {
+    
+   padding: 24px 0;
+}
+#about {
+    background-color: rgb(236, 244, 222);
+}
+h2 {
+    font-size: 62px; 
+    text-align: center;  
+    margin-bottom: 24px; 
+}
+.text_desc {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.about_img{
+    width: 40%;
+    padding: 0 24px;
+}
+img{
+    width: 100%;
+}
+.section_desc--wrapper{
+    width: 60%;
+    padding: 0 24px;
+}
+.section_description--para{
+    font-size: 20px;
+    line-height:1.5;
+    margin-bottom: 24px;
+
+}
+/* about */
+#discord{
+    padding: 24px 0;
+    background-color: rgb(189, 238, 238);
+}
+
+.text_desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contact*/ 
+#contact {
+    background-color: rgb(204, 239, 248);
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+input, textarea{
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(180, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer_logo{
+    max-width: 350px;
+    margin-bottom: 16px;
+}
+
+.footer_links{
+    margin-bottom: 32px;
+    
+}
+
+.footer_link{
+    padding: 0 16px;
+}
+
+/*small smartphone, tablette, larger smartphone*/
+@media (max-width:728px){
+.row{
+    flex-direction: column;
+}
+.home_description{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description_button{
+    max-width: 240px;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+.subhead{
+    text-align: center;
+    font-size: 24px;
+}
+ul{
+    display: none;
+}
+.text_desc{
+    flex-direction: column;
+}
+.section_desc--wrapper{
+    width: 100%;
+}
+.about_img{
+    width: 100%;
+}
+
+#discord .text_desc{
+    flex-direction: column-reverse;
+}
+footer{
+    padding: 48px 24px;
+}
+.footer_logo{
+    max-width: 360px;
+}
+.footer_link{
+    padding: 0 8px;
+    font-size: 18px;
+}
+.footer_links{
+    margin-bottom: 48px;
+}
+
+}
